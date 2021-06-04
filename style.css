@@ -1,0 +1,294 @@
+/* rgb(247,217,217)
+rgb(255,254,254)
+rgb(255,243,243)
+rgb(212,165,165)
+rgb(179,117,117) */
+
+/* global */
+
+body{
+  margin: 0px;
+  font-family: sans-serif;
+}
+section{
+  margin: 60px;
+}
+.btn-pastel{
+  background-color: rgb(247, 217, 217);
+  color: rgb(115, 115, 115);
+}
+.btn-pastel-secondary{
+  background-color: rgb(233, 230, 230);
+  color:black;
+}
+.btn-pastel:hover{
+  color:rgb(115, 115, 115);
+}
+.carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+h2{
+  text-align: center;
+  margin: 15px;
+  font-weight: bold;
+}
+#categories img{
+  width: 350px;
+}
+
+/* navbar */
+
+.navbar-custom{
+  background: transparent;
+  transition-duration: 1s;
+} 
+.navbar-custom2{
+  background-color: rgb(230 , 230, 230);
+  box-shadow: 0 4px 10px rgb(166, 166, 166);
+  transition-duration: 1s;
+}
+.navbar-custom2 a{
+  color: rgb(115, 115, 115);
+}
+.navbar-custom a{
+  color: black;
+}
+
+/* main */
+
+main{
+  background-image: url("smiley-woman-holding-shopping-bags-pointing-possible-store-sale.png");
+  background-size: cover;
+  height: 620px;
+  padding: 80px;
+}
+main div{
+  position: relative;
+  right: 50px;
+}
+main h1{
+  font-size: 80px;
+  font-weight: bolder;
+}
+main p:nth-of-type(1){
+  font-size: 30px;
+}
+
+/* shop by categories */
+
+.women{
+  background-image: url("pretty-beautiful-woman-with-blonde-long-hair-having-excited-and-happy-facial-expression.jpg");
+}
+.children{
+  background-image: url("beautiful-little-blonde-girl-smiles-winking-posing-touching-face-with-her-hands-pink-cute-dress-child-looking-happy-delighted-copy-space.jpg");
+}
+.beauty{
+  background-image: url("skincare-products-light-surface.jpg");
+}
+.women, .children, .beauty{
+  background-size: cover;
+  width: 350px;
+  height: 233px;
+  margin: 15px;
+}
+.layer{
+  width: 350px;
+  height: 233px;
+  background-image: linear-gradient(45deg, rgba(78, 78, 78, 0.7) , rgba(187, 186, 184, 0.1));
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.cat_info{
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  color: white;
+}
+.layer h4{
+  font-weight: bold;
+}
+
+/* bestsellers */
+
+.best-products{
+  width: 250px;
+  height: 250px;
+}
+#bestsellers .fa-heart-o, .modal .fa-heart-o{
+  color: black !important;
+}
+#bestsellers .fa-heart, .modal .fa-heart{
+  color: red;
+}
+#bestsellers .fa-heart, #bestsellers .fa-heart-o{
+  font-size: 20px;
+  display: inline;
+}
+.black{
+  background: rgb(21, 20, 18);
+}
+.white{
+  background: rgb(240, 235, 231);
+}
+.brown{
+  background: rgb(130, 64, 32);
+}
+.yellow{
+  background: rgb(227, 177, 64);
+}
+.white-bag , .brown-bag , .white-shoes, .yellow-shirt{
+  display: none;
+}
+.black, .white, .brown, .yellow{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+.black:hover, .white:hover, .brown:hover, .yellow:hover{
+  opacity: 0.9;
+}
+.colors{
+  display: block;
+}
+.bag, .shoes, .shirt{
+  margin: 20px;
+}
+.modal img{
+  width: 150px;
+  height: 150px;
+}
+input[type=number] {
+  width: 60px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+#bestsellers .fa-star-o{
+  color: black !important;
+}
+.fa-star{
+  color: goldenrod;
+}
+.info{
+  padding: 25px 0;
+}
+
+/* reviews */
+
+#reviews img{
+  width: 180px;
+  height: 180px;
+}
+#reviews #carouselExampleIndicators li{
+  position: relative;
+  top: 40px;
+  background-color: rgb(115, 115, 115);
+}
+#reviews .container{
+  background-color: rgb(255,243,243);
+  padding: 60px;
+  z-index: 10;
+}
+.carousel-inner img{
+  margin-bottom: 20px;
+}
+
+/* newsletter */
+
+#newsletter .container{
+  background-color: rgb(247, 217, 217);
+  padding: 60px;
+  height: 420px;
+}
+#newsletter input{
+  height: 40px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border:1px solid rgb(115, 115, 115);
+  outline: none;
+}
+.fa-envelope{
+  position: relative;
+  right: 50px;
+  top: 2px;
+  z-index: 10;
+  font-size: 20px;
+  color: rgb(115, 115, 115);
+  cursor: pointer;
+}
+#newsletter input:focus{
+  box-shadow: 0 0 30px white;
+}
+#email_sent, #message_submitted{
+  color: rgb(115, 115, 115);
+}
+
+/* contact us */
+
+#contact_us .container{
+  background: rgb(212,165,165);
+  padding: 60px;
+}
+input[type="text"]{
+  width: 200px;
+  padding: 4px;
+  margin: 10px;
+}
+input[type="email"], textarea{
+  width: 419px;
+  padding: 4px;
+  margin: 10px; 
+}
+textarea{
+  height: 120px;
+  resize: none;
+}
+#contact_us button{
+  width: 140px;
+  color: white;
+  background: none;
+  padding: 4px;
+  border: 2px solid white;
+  margin: 10px;
+}
+#contact_us input:focus, #contact_us textarea:focus, #contact_us button:focus{
+  outline: none;
+}
+.shop_info, #message_submitted{
+  margin: 10px;
+}
+#message_submitted{
+  color: white;
+}
+
+/* footer */
+
+footer{
+  background-color: rgb(179, 117, 117);
+  padding: 60px;
+}
+footer h4{
+  font-weight: bold;
+}
+footer a{
+  color: black;
+  text-decoration: none;
+}
+
+/* made with love */
+
+#made_with_love{
+  text-align: center;
+  color: white;
+  background: rgb(145, 95, 95);
+  padding: 10px;
+  margin: 0;
+}
